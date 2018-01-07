@@ -1,0 +1,58 @@
+/* Estilos generales en body*/
+
+body {
+  margin: 0;
+  padding: 0;
+  /* Ruta de imagen de fondo*/
+  background: url("../assets/images/dawn.png");
+  /* Especificaciones de imagen de fondo*/
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  /* 1vh = 1% de la altura del viewport*/
+  height: 100vh;
+  width: 100%;
+}
+
+/* Gatito con respecto a su contenedor*/
+
+img {
+  width: 90%;
+}
+
+/* Estilos de caja contenedora*/
+
+.kittys-box {
+  margin: 0 auto;
+  position: absolute;
+  bottom: 10px;
+  left: 20%;
+  right: 20%;
+}
+
+/* Media query "pantalla mediana" */
+
+@media screen and (max-width: 880px) {
+  /* Modifica url de imagen de fondo */
+  body {
+    background-image: url(../assets/images/night.jpg);
+  }
+  /* Modifica url de contenido de imagen */
+  img {
+    content: url("../assets/images/kitten-medium.png");
+  }
+}
+
+/* Media query "pantalla chica" */
+
+@media screen and (max-width: 540px) {
+  /* Modifica url de imagen de fondo */
+  body {
+    background-image: url(../assets/images/sunny-day.jpg);
+  }
+  /* Modifica url de contenido de imagen */
+  img {
+    content: url("../assets/images/kitten-small.png");
+  }
+}
